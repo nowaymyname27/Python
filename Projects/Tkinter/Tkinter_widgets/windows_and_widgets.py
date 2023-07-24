@@ -24,6 +24,7 @@ text.pack()
 entry = ttk.Entry(master = window)
 entry.pack()
 
+# ttk label 2
 label2 = ttk.Label(master = window, text = "My label")
 label2.pack()
 
@@ -31,16 +32,10 @@ label2.pack()
 button = ttk.Button(master = window, text = "A button", command = button_func)
 button.pack()
 
-# exercise
-# add one more text label and a button with a function that prints 'hello'
-# the label should say "my label" and be between the entry widget and the button
-
-
-button2 = ttk.Button(master = window, text = "Hello", command = button_func2)
+# ttk button 2
+# button2 = ttk.Button(master = window, text = "Hello", command = button_func2)
+button2 = ttk.Button(master = window, text = "Hello", command = lambda: print("Hello"))
 button2.pack()
-
-
-# run
 
 #run the window
 window.mainloop()
